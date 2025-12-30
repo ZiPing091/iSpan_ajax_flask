@@ -35,6 +35,17 @@
         const imgLoader = document.querySelector('#img1');
         const btnStart = document.querySelector('#buttonStart');
 
+        const promise = new Promise((resolve, reject) => {
+            if (true) {
+                resolve('成功')
+            } else {
+                reject('失敗')
+            }
+        });
+        promise.then(data => console.log(data))
+            .catch(error => console.log(error))
+            .finally(() => console.log('end'))
+
     </script>
 </body>
 
