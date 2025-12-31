@@ -46,3 +46,8 @@ api.add_resource(SpotsByDistrict, '/spot-district')
 api.add_resource(MembersResource, '/members')
 api.add_resource(MemberResource, '/members/<int:id>')
 api.add_resource(MemberExistCheck, '/member/check/<string:name>')
+
+#
+from resources.user_api import Users, User
+api.add_resource(Users, '/users')
+api.add_resource(User, '/users/<int:user_id>')
